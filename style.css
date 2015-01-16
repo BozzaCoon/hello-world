@@ -1,0 +1,19 @@
+#bod
+{
+    background-color:#505050;
+}
+
+#header
+{
+    background-color:black;
+    color:white;
+    border-radius: 8px;
+    text-align:center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#text
+{
+    margin-left: 150px;
+}
