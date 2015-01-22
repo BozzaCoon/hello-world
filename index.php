@@ -9,7 +9,7 @@ echo "<link rel='stylesheet' type='text/css' href='style.css'>";
 echo "</head>";
 echo "<body id='bod'>";
 echo "<div id='header'>";
-    echo "<h2 style='color:white;'>Using CSS.</h2>";
+    echo "<h2 style='color:white;'>Using CSS and change someting</h2>";
 echo "</div>";
 echo "<div id='text'> only a small test</div>";
 echo "</body>";
