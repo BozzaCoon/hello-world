@@ -12,6 +12,8 @@ echo "<div id='header'>";
     echo "<h2 style='color:white;'>Using CSS and change someting</h2>";
     echo "<div>Bohja more changes.</div>";
     echo "<div>Bohja more changes. again...</div>"; // its not working if I only add an ; maybe with an comment
+    echo "<div>no chance... so I edit more in this file</div>";
+    echo "<div>I hope he change all differences</div>";
 echo "</div>";
 echo "<div id='text'> only a small test</div>";
 echo "</body>";
