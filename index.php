@@ -14,6 +14,7 @@ echo "<div id='header'>";
     echo "<div>Bohja more changes. again...</div>";
     echo "<div>OK that works... not realy sure why.</div>";
     echo "<div>first change while i have it open in the PHP Storm</div>";
+    echo "<div>first try ok... now second time</div>";
 echo "</div>";
 echo "<div id='text'> only a small test</div>";
 echo "</body>";
