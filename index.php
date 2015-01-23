@@ -11,7 +11,7 @@ echo "<body id='bod'>";
 echo "<div id='header'>";
     echo "<h2 style='color:white;'>Using CSS and change someting</h2>";
     echo "<div>Bohja more changes.</div>";
-    echo "<div>Bohja more changes. again...</div>"
+    echo "<div>Bohja more changes. again...</div>";
 echo "</div>";
 echo "<div id='text'> only a small test</div>";
 echo "</body>";
