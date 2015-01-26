@@ -13,6 +13,7 @@ echo "<div id='header'>";
     echo "<div>now some lines of text. some...</div>";
     echo "<div>change my bat file and look for working</div>";
     echo "<div>change to test the new git Installation.</div>";
+    echo "<div>more interesting information</div>";
 echo "</div>";
 echo "<div id='text'> only a small test</div>";
 echo "</body>";
