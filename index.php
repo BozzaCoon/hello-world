@@ -17,19 +17,31 @@ echo "<div id='header'>";
 echo "</div>";
 
 
-$eiche = new Baum('Eiche',50,1);
+$eiche = new Baum('Eiche',500,1);
 $fichte = new Baum('Fichte',100,5);
 echo "<div class='text'>"."Ich bin eine kleine ".$eiche->Art_ausgabe()." </div>";
 echo "<div class='text'>".$eiche->wachsen(2)."</div>";
-echo "<div class='text'>".$eiche->sage_mir_dein_wohlbefinden()."</div>";
+echo "<div class='text'>".$eiche->sage_mir_dein_wohlbefinden(),$eiche->gesundheitZahl()."</div>";
 echo "<div class='text'>".$eiche->gewitter()."</div>";
+echo "<div class='text'>".$eiche->sage_mir_dein_wohlbefinden(),$eiche->gesundheitZahl()."</div>";
+echo "<div class='text'>".$eiche->gewitter()."</div>";
+echo "<div class='text'>".$eiche->sage_mir_dein_wohlbefinden(),$eiche->gesundheitZahl()."</div>";
+echo "<div class='text'>".$eiche->gewitter()."</div>";
+echo "<div class='text'>".$eiche->sage_mir_dein_wohlbefinden(),$eiche->gesundheitZahl()."</div>";
+echo "<div class='text'>".$eiche->gewitter()."</div>";
+echo "<div class='text'>".$eiche->sage_mir_dein_wohlbefinden(),$eiche->gesundheitZahl()."</div>";
+echo "<div class='text'>".$eiche->gewitter()."</div>";
+echo "<div class='text'>".$eiche->sage_mir_dein_wohlbefinden(),$eiche->gesundheitZahl()."</div>";
+echo "<div class='text'>".$eiche->gewitter()."</div>";
+echo "<div class='text'>".$eiche->sage_mir_dein_wohlbefinden(),$eiche->gesundheitZahl()."</div>";
 echo "<div class='text'>".$eiche->wachsen(1)."</div>";
+echo "<div class='text'>".$eiche->sage_mir_dein_wohlbefinden(),$eiche->gesundheitZahl()."</div>";
 echo "<div class='text'>".$eiche->sage_mir_dein_wohlbefinden()."</div>";
 echo $eiche->meine_hoehe();
 echo "<div class='text'>".$eiche->wachsen(4)."</div>";
 echo "<div class='text'>Dabei erhole ich mich vom Gewitter.</div>";
 $eiche->schlafen();
-echo "<div class='text'>".$eiche->sage_mir_dein_wohlbefinden()."</div>";
+echo "<div class='text'>".$eiche->sage_mir_dein_wohlbefinden(),$eiche->gesundheitZahl()."</div>";
 echo $eiche->meine_hoehe();
 
 echo "<br /><br /><br />";

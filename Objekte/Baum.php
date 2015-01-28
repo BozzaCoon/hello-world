@@ -22,9 +22,12 @@ class Baum
 
     public function sage_mir_dein_wohlbefinden()
     {
-        if ( $this->gesundheit > 80) return 'Mir geht es super.';
-        if ( $this->gesundheit > 40) return 'Ich hatte schon bessere Tage.';
-        if ( $this->gesundheit > 0) return 'Mir geht es echt mies.';
+        if ($this->gesundheit < 0){$this->gesundheit = 0;}
+        elseif($this->gesundheit >100){$this->gesundheit = 100;}
+
+        if ( $this->gesundheit > 80) return 'Mir geht es super. ';
+        if ( $this->gesundheit > 40) return 'Ich hatte schon bessere Tage. ';
+        if ( $this->gesundheit > 0) return 'Mir geht es echt mies. ';
         return 'Ich bin ein Tisch.';
     }
 
@@ -53,6 +56,11 @@ class Baum
     public function Art_ausgabe()
     {
         return $this->art;
+    }
+
+    public function gesundheitZahl()
+    {
+        return $this->gesundheit;
     }
 }
 
