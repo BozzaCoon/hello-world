@@ -1,9 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: rackel
  * Date: 28.01.2015
- * Time: 11:16
  */
 
 // namespace Objekte;
