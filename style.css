@@ -13,9 +13,10 @@
     margin-right: 150px;
 }
 
-#text
+.text
 {
     margin-left: 150px;
+    color:lightgreen;
 }
 
 #großschrift
