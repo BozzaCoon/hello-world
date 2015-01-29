@@ -33,7 +33,7 @@ class Baum
 
     public function meine_hoehe()
     {
-        return '<div class="text">Ich bin '.$this->hoehe.'m Hoch</div>';
+        return 'Ich bin '.$this->hoehe.'m Hoch';
     }
 
     public function wachsen($wert)
