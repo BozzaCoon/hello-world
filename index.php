@@ -3,7 +3,7 @@
 // $foo = new Acme\Tools\Foo(); //Alte und lange schreibweise
 /*use Acme\Tools\Foo as SomeFooClass; // aliasnahme für den Namespace
 $foo = new SomeFooClass();  // ...*/
-// use \loader\Objekte;
+use \loader\Objekte;
 
 
 
