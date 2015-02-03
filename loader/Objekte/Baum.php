@@ -4,7 +4,7 @@
  * Date: 28.01.2015
  */
 
-// namespace Objekte;
+// namespace loader\Objekte;
 
 
 class Baum

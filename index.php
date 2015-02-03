@@ -1,14 +1,20 @@
 <?php
+// require 'loader/Objekte/Foo.php';
+// $foo = new Acme\Tools\Foo(); //Alte und lange schreibweise
+/*use Acme\Tools\Foo as SomeFooClass; // aliasnahme für den Namespace
+$foo = new SomeFooClass();  // ...*/
+// use \loader\Objekte;
 
-//include'Objekte/Baum.php';
 
-// require 'loader/derAutoloader.php';
 
-// spl_autoload_register(array('derAutoloader','load'));
+//include'Objekte/Baum.php'; // direktes einbinden
 
-function __autoload($klassenname)        // Funktioniert gut!
+require_once 'loader/derAutoloader.php';  // Einbinden über php file
+spl_autoload_register(array('derAutoloader','load'));
+
+/*function __autoload($klassenname)        // Funktioniert gut!
 {
-    // Verbeiten bestimmter Zeichen in Klassennamen
+    // Verbieten bestimmter Zeichen in Klassennamen
     if (strpos ($klassenname, '.') !== false || strpos ($klassenname, '/') !== false
         || strpos ($klassenname, '\\') !== false || strpos ($klassenname, ':') !== false)
     {
@@ -24,7 +30,7 @@ function __autoload($klassenname)        // Funktioniert gut!
     {
         return false;
     }
-}
+}*/
 
 echo "<!DOCTYPE html>";
 echo "<html>";
@@ -40,7 +46,7 @@ echo "<div id='header'>";
     echo "<div>Der Baum aus Klassen</div>";
 echo "</div>";
 
-
+$foo = new Foo();
 $eiche = new Baum('Eiche',500,1);
 $fichte = new Baum('Fichte',100,5);
 echo "<div class='text'>"."Ich bin eine kleine ".$eiche->Art_ausgabe()." </div>";
@@ -82,7 +88,15 @@ $fichte->schlafen();
 echo "<div class='text'>".$fichte->sage_mir_dein_wohlbefinden()."</div>";
 echo "<div class='text'>".$fichte->meine_hoehe()."</div>";
 
-echo "</span>";
+
+echo "<div class='textskyblue'>".$foo->doAwesomeFooThings()."</div>";
+
+
+echo "<pre>";       // Was ist drinn in den Objekten:
+echo print_r($eiche)."<br />";
+echo print_r($fichte)."<br />";
+echo print_r($foo);
+echo "</pre>";
 
 echo "</body>";
 echo "</html>";

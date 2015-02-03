@@ -15,13 +15,30 @@ class derAutoloader
             return;
         }
 
-        $pfad='loader\Objekte'.DIRECTORY_SEPARATOR.$klassenname.'.php';
+        $pfad='loader/Objekte'.DIRECTORY_SEPARATOR.$klassenname.'.php'; // Wo kann die Klasse liegen?
 
-        echo "<pre>";
-        print_r($pfad);
-        echo "</pre>";
+        if (file_exists($pfad))
+        {
+            echo "<pre>";
+            print_r($pfad);
+            echo "</pre>";
+            require_once $pfad;
+        }
+        else
+        {
+            $pfad='loader'.DIRECTORY_SEPARATOR.$klassenname.'.php';     // Wo kann die Klasse liegen?
 
-        if (file_exists($pfad)) { require_once $pfad; }
-        else { return false; }
+            if (file_exists($pfad))
+            {
+                echo "<pre>";
+                print_r($pfad);
+                echo "</pre>";
+                require_once $pfad;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
