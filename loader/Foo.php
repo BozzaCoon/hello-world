@@ -4,12 +4,12 @@
  * Date: 02.02.2015
  */
 
-// namespace loader\Objekte;
+// namespace loader;
 
 class Foo
 {
     public function doAwesomeFooThings()
     {
-        echo 'say Hi to the listeners';
+        return 'say Hi to the listeners';
     }
 }

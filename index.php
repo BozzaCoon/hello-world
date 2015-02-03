@@ -1,15 +1,15 @@
 <?php
-// require 'Foo.php';
+// require 'loader/Objekte/Foo.php';
 // $foo = new Acme\Tools\Foo(); //Alte und lange schreibweise
 /*use Acme\Tools\Foo as SomeFooClass; // aliasnahme für den Namespace
 $foo = new SomeFooClass();  // ...*/
-// use \loader\Objekte;
+// use \loader\Objekte\Foo;
 
 
 
 //include'Objekte/Baum.php'; // direktes einbinden
 
-require 'loader/derAutoloader.php';  // Einbinden über php file
+require_once 'loader/derAutoloader.php';  // Einbinden über php file
 spl_autoload_register(array('derAutoloader','load'));
 
 /*function __autoload($klassenname)        // Funktioniert gut!
@@ -88,14 +88,16 @@ $fichte->schlafen();
 echo "<div class='text'>".$fichte->sage_mir_dein_wohlbefinden()."</div>";
 echo "<div class='text'>".$fichte->meine_hoehe()."</div>";
 
-$test = __DIR__;
-echo $test."<br/>";
 
-echo "<div class='text'>".$foo->doAwesomeFooThings()."</div>";
+echo "<div class='textskyblue'>".$foo->doAwesomeFooThings()."</div>";
 
-echo "</span>";
+
+echo "<pre>";       // Was ist drinn in den Objekten:
+echo print_r($eiche)."<br />";
+echo print_r($fichte)."<br />";
+echo print_r($foo);
+echo "</pre>";
 
 echo "</body>";
 echo "</html>";
-
 ?>
