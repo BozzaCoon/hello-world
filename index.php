@@ -1,4 +1,7 @@
 <?php
+use loader\Foo;
+use loader\Objekte\Baum as pflanze;
+
 // require 'loader/Objekte/Foo.php';
 // $foo = new Acme\Tools\Foo(); //Alte und lange schreibweise
 /*use Acme\Tools\Foo as SomeFooClass; // aliasnahme für den Namespace
@@ -6,10 +9,9 @@ $foo = new SomeFooClass();  // ...*/
 // use \loader\Objekte;
 
 
-
 //include'Objekte/Baum.php'; // direktes einbinden
 
-require_once 'loader/derAutoloader.php';  // Einbinden über php file
+require_once 'derAutoloader.php';  // Einbinden über php file
 spl_autoload_register(array('derAutoloader','load'));
 
 /*function __autoload($klassenname)        // Funktioniert gut!
@@ -47,8 +49,8 @@ echo "<div id='header'>";
 echo "</div>";
 
 $foo = new Foo();
-$eiche = new Baum('Eiche',500,1);
-$fichte = new Baum('Fichte',100,5);
+$eiche = new pflanze('Eiche',500,1);
+$fichte = new pflanze('Fichte',100,5);
 echo "<div class='text'>"."Ich bin eine kleine ".$eiche->Art_ausgabe()." </div>";
 echo "<div class='text'>".$eiche->meine_hoehe()." </div>";
 echo "<div class='text'>".$eiche->wachsen(2)."</div>";

@@ -4,7 +4,7 @@
  * Date: 02.02.2015
  */
 
-// namespace loader;
+namespace loader;
 
 class Foo
 {
