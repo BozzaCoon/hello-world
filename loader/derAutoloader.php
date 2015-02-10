@@ -16,8 +16,8 @@ class derAutoloader
             return;
         }
 
-        $pfad=__DIR__ .DIRECTORY_SEPARATOR.$klassenname.'.php'; // Wo kann die Klasse liegen?
-
+        $pfad=__DIR__ .'/..'.DIRECTORY_SEPARATOR.$klassenname.'.php'; // Wo kann die Klasse liegen?
+        // Pfad bis . Einen Ordner hoch . \ . Klassenname.php
         echo "<pre>";
         print_r($pfad);
         echo "</pre>";

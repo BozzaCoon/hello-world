@@ -11,7 +11,7 @@ $foo = new SomeFooClass();  // ...*/
 
 //include'Objekte/Baum.php'; // direktes einbinden
 
-require_once 'derAutoloader.php';  // Einbinden über php file
+require_once 'loader/derAutoloader.php';  // Einbinden über php file
 spl_autoload_register(array('derAutoloader','load'));
 
 /*function __autoload($klassenname)        // Funktioniert gut!
@@ -100,6 +100,20 @@ echo print_r($fichte)."<br />";
 echo print_r($foo);
 echo "</pre>";
 
+ob_start();
+phpinfo();
+$PhpInfo = ob_get_clean();
+
+if (isset($_REQUEST['los']))
+{
+    system("cmd /c C://xampp//htdocs//neu.bat");
+}
+else
+{
+    echo "<form method='post' action='".$_SERVER['PHP_SELF']."'>";
+    echo "<input type='submit' value='Batch Datei Ausführen' name='los'>";
+    echo "</form>";
+}
 echo "</body>";
 echo "</html>";
 
