@@ -62,5 +62,6 @@ class Baum
     {
         return $this->gesundheit;
     }
+    
 }
 ?>
