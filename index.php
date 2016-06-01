@@ -94,11 +94,11 @@ echo "<div class='text'>".$fichte->meine_hoehe()."</div>";
 echo "<div class='textskyblue'>".$foo->doAwesomeFooThings()."</div>";
 
 
-echo "<pre>";       // Was ist drinn in den Objekten:
-echo print_r($eiche)."<br />";
-echo print_r($fichte)."<br />";
-echo print_r($foo);
-echo "</pre>";
+//echo "<pre>";       // Was ist drinn in den Objekten:
+//echo print_r($eiche)."<br />";
+//echo print_r($fichte)."<br />";
+//echo print_r($foo);
+//echo "</pre>";
 
 echo "</body>";
 echo "</html>";

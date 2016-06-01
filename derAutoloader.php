@@ -13,14 +13,14 @@ class derAutoloader
         if (strpos ($klassenname, '.') !== false || strpos ($klassenname, '/') !== false
             || strpos ($klassenname, ':') !== false)
         {
-            return;
+            return false;
         }
 
         $pfad=__DIR__ .DIRECTORY_SEPARATOR.$klassenname.'.php'; // Wo kann die Klasse liegen?
 
-        echo "<pre>";
-        print_r($pfad);
-        echo "</pre>";
+//        echo "<pre>";
+//        print_r($pfad);
+//        echo "</pre>";
 
         if (file_exists($pfad))
         {
@@ -32,5 +32,6 @@ class derAutoloader
             echo "File nicht gefunden...";
             return false;
         }
+        return true;
     }
 }
