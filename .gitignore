@@ -2,4 +2,6 @@
 .idea/
 .project
 
-/Picture/
+/Picture/*.jpg
+
+[Bb]in/
